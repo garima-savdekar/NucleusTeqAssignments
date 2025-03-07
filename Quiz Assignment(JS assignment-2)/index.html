@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <div id="startscreen">
+            <h1 id="heading">QUIZ GAME</h1>
+            <div id="selection">
+                <label for="category">Select Category:</label>
+                <select id="category" class="btn">
+                    <option value="18" class="opt">Computer Science</option>
+                    <option value="17" class="opt">Nature</option>
+                    <option value="19" class="opt">Mathematics</option>
+                    <option value="21" class="opt">Sports</option>
+                    <option value="28" class="opt">Vehicles</option>
+                </select>
+                <label for="difficulty">Select Difficulty:</label>
+                <select id="difficulty" class="btn">
+                    <option class="opt" value="easy">Easy</option>
+                    <option class="opt" value="medium">Medium</option>
+                    <option class="opt" value="hard">Hard</option>
+                </select>
+                <div id="start">
+                    <button id="startbtn" class="twobtn">Start Quiz</button>
+                </div>
+            </div>
+
+
+            <div class="infobox">
+                <div class="infotitle"><span>Rules of this Quiz</span></div>
+                <div class="infolist">
+                    <div class="info">1. You will have only <span>15 seconds</span> for each question.</div>
+                    <div class="info">2. You can't select any option once time goes off.</div>
+                    <div class="info">3. You'll get points on the basis of your correct answers.</div>
+                </div>
+            </div>
+        </div>
+        <div id="quizcontainer" class="hidden">
+            <p id="timer" class="hidden">⏱️Time left:<span id="time">15</span> seconds</p>
+            <h2 id="question"></h2>
+            <div id="options"></div>
+            <p id="feedbackw"></p>
+            <p id="feedbackc"></p>
+            <p class="hidden" id="paralivescore"> Current Score: <span id="livescore">0</span></p>
+        </div>
+        <div id="endbox" class="hidden">
+            <h2 id="endtitle">Quiz Completed!</h2>
+            <p id="endscore">Your score: <span id="score"></span></p>
+            <button id="restartbtn" class="twobtn">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

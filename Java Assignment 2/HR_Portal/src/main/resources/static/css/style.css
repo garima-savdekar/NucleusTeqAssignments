@@ -1,0 +1,155 @@
+body { 
+    font-family: Arial, sans-serif;
+    background-color: rgb(226, 188, 247);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.navbar {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(177, 56, 245);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar a, .navbar button {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: rgb(108, 39, 210);
+    border-radius: 5px;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(208, 132, 250);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    text-align:center;
+}
+
+
+form {
+    background-color: rgb(232, 200, 250);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-color: rgb(177, 56, 245);
+}
+
+button {
+    
+    padding: 10px;
+    background-color: rgb(134, 66, 244);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+button:hover {
+    background-color: rgb(108, 39, 210);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgb(232, 200, 250);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background-color: rgb(177, 56, 245);
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgb(208, 132, 250);
+}
+
+td button {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: rgb(134, 66, 244);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+td button:hover {
+    background-color: rgb(108, 39, 210);
+}
+
+#logoutbtn {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logoutbtn:hover {
+    background-color: darkred;
+}
+
+
+

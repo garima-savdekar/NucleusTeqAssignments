@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<h1>HR Portal</h1>
+<div class="navbar">
+    <button><a href="/viewEmployees.html">Back</a></button>
+    <div class="right-menu">
+        <button id="logoutbtn">Logout</button>
+
+    </div>
+</div>
+
+    <div class="container">
+        <h2>Add New Employee</h2>
+        <form id="addEmployeeForm">
+            <label>Name:</label>
+            <input type="text" id="name" required>
+
+            <label>Department:</label>
+            <input type="text" id="department" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Salary:</label>
+            <input type="number" id="salary" required>
+
+            <button type="submit">Add Employee</button>
+        </form>
+    </div>
+
+    <script src="/js/addemployee.js"></script> 
+</body>
+</html>
